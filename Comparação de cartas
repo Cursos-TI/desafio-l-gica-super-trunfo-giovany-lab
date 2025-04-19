@@ -1,0 +1,107 @@
+#include <stdio.h>
+
+
+int main() {
+
+     // variaveis da carta 1
+    char Estado1 = "A";
+    char Codigodacarta1[4] = "A01";
+    char Nomedacidade1[10] = "Sãopaulo";
+    int Populacao1 = 12325000;
+    float Area1 = 1521.11;
+    float PIB1 = 699.28;
+    int Numeropt1 = 50;
+    float Densidade1 = Populacao1 / Area1;
+    float PIBcapta1 = (float)PIB1 / Populacao1;
+
+    // variaveis da carta 2
+    char Estado2 = "B";
+    char Codigodacarta2[4] = "B02";
+    char Nomedacidade2[20] = "RiodeJaneiro";
+    int Populacao2 = 6748000;
+    float Area2 = 1200.25;
+    float PIB2 = 300.50;
+    int Numeropt2 = 30;
+    float Densidade2 = Populacao2 / Area2;
+    float PIBcapta2 = (float)PIB2 / Populacao2;
+   
+    printf("Estado :%s \n", Estado1);
+    printf("Código da carta : %s\n", Codigodacarta1);
+    printf("Nome da Cidade : %s\n", Nomedacidade1);
+    printf("População : %d\n", População1);
+    printf("Área : %f \n", Area1);
+    printf("PIB : %f\n", PIB1);
+    printf("Número de Pontos turísticos : %d\n", Numeropt2);
+    printf("Densidade Populacional: %2.f hab/km²\n",Densidade1);
+    printf("PIB per capta: %2.f reais\n",PIBcapta1);
+
+    printf("Estado :%s \n", Estado2);
+    printf("Código da carta : %s\n", Codigodacarta2);
+    printf("Nome da Cidade : %s\n", Nomedacidade2);
+    printf("População : %d\n", População2);
+    printf("Área : %f \n", Area2);
+    printf("PIB : %f\n", PIB2);
+    printf("Número de Pontos turísticos : %d\n", Numeropt2);
+    printf("Densidade Populacional: %2.f hab/km²\n",Densidade2);
+    printf("PIB per capta: %2.f reais\n",PIBcapta2);
+
+    //menu de opções
+
+  int opcao
+  printf("**Comparação de cartas***\n");
+  Printf("Escolha a categoria que deseja usar para jogar comparação de cartas\n");
+  printf("1. PIB\n");
+  printf("2. Densidade Populacional\n");
+  printf("3.  Área \n");
+  printf("4. PIB per capta\n");
+  printf("5. Número de pontos turísticos\n");
+  printf("6. População: \n");
+  scanf("%d", &opcao);
+
+switch (opcao) {
+    case 1:
+      if(PIB1>PIB2){
+      print("Carta A venceu na comparação de PIB!");
+      }else if(PIB2>PIB1){
+      print("Carta B venceu na comparação de PIB!");
+}
+     break;
+    case 2:
+   if(Densidade2>Densidade1){
+      print("Carta A venceu na comparação de Densidade Populacional!");
+      }else if(Densidade1>Densidade2){
+      print("Carta B venceu na comparação de Densidade PoPulacional!");
+      }
+break;
+    case 3:
+      if(Area1>Area2){
+      print("Carta A venceu na comparação de Área!");
+      }else if(Area2>Area1e){
+      print("Carta B venceu na comparação de Área!");
+      }
+    case 4:
+      if(PIBpcapta1>PIBcapta1){
+      print("Carta A venceu na comparação de PIB per capta!");
+      }else if(PIBpcapta2>PIBcapta1){
+      print("Carta B venceu na comparação de PIB per capta!");
+      }
+      case 5:
+      
+      if(Numeropt1>Numeropt2){
+      print("Carta A venceu na comparação de Numero de Pontos Turísticos!");
+      }else if(PIBpcapta2>PIBcapta1){
+      print("Carta B venceu na comparação de Número de Pontos Turísticos!");
+      }
+      
+      case 6:
+      
+      if(Populacao1>Populacao2){
+      print("Carta A venceu na comparação de População!");
+      }else if(PIBpcapta2>PIBcapta1){
+      print("Carta B venceu na comparação de População!");
+      }
+default:
+      printf("Opção inválida. Tente novamente.\n");
+  }
+
+  
